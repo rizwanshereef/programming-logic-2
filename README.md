@@ -6,16 +6,10 @@
 * Java program to find the sum of common elements from given two arrays.
 * Java program to find the length of the longest sequence of zeros in the binary representation of a positive integer.
 * Java program which reads a number of students and n grades as input (of int between 0 and 100, inclusive) and displays the average, minimum, and maximum.
-* Java program to to print the following :
-    	    *
-      **
-    ***
-  ****
-*****
-
+* Java program to to print the following sequence of star in pyramid.
 * Java program to return the number of 9's in the array.
 * Java program that accepts a number as input and check whether the given number is palindrome or not If it is a palindrome then
-a. Add all the even numbers and check whether the sum is more than 25.   
+a. Add all the even numbers and check whether the sum is more than 25.
 b. Print success and failure messages for all 3 conditions.
 
 * Write a program which accepts an integer number as input from the user and perform the following conditional checks:
