@@ -15,9 +15,16 @@ public class Main {
         int sum =0;
         for(int i=0; i<num; i++)
         {
-            System.out.println("Enter the mark for student "+(i+1));
+            System.out.println("Enter the mark for student " + (i + 1));
             mark[i] = s.nextInt();
-            sum = sum+mark[i];
+
+            if (mark[i] >= 0 && mark[i] <= 100)
+            {
+                sum = sum + mark[i];
+            } else {
+                System.out.println("Enter valid number!");
+                System.exit(0);
+            }
         }
         m.avg(sum,num);
         m.min(mark);
