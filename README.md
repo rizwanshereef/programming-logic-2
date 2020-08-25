@@ -12,7 +12,7 @@
 a. Add all the even numbers and check whether the sum is more than 25.
 b. Print success and failure messages for all 3 conditions.
 
-* Write a program which accepts an integer number as input from the user and perform the following conditional checks:
+* Java program which accepts an integer number as input from the user and perform the following conditional checks:
 a. Print Tom if the number is odd and exists between 20 to 30   
 b. Print Jerry, if the number is even and exists between 20 and 30
 
