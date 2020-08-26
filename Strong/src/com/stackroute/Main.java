@@ -2,24 +2,24 @@ package com.stackroute;
 
 import java.util.*;
 
-public class Main
-{
+public class Main{
+/*Main Class to find if the number is Strong*/
 	public static void main(String[] args) {
 		int n,i;
 		int fact,rem;
 		Scanner sc = new Scanner(System.in);
+/*Input the number*/
 		System.out.print("\nEnter the number : ");
 		n = sc.nextInt();
 		int sum = 0;
 		int temp = n;
-		while(n != 0)
-		{
+/*Check whether the number is strong*/
+		while(n != 0){
 			i = 1;
 			fact = 1;
 			rem = n % 10;
 
-			while(i <= rem)
-			{
+			while(i <= rem){
 				fact = fact * i;
 				i++;
 			}
