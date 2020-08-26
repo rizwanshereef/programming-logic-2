@@ -9,6 +9,7 @@ public class Main {
         double a,b;
         int num;
         String ch = "y";
+/*Infinite loop to check if user needs to continue*/
         while(true){
 
             System.out.println(" Enter the first number:");
@@ -16,6 +17,7 @@ public class Main {
             System.out.println(" Enter the second number:");
             b= s.nextDouble();
             System.out.println("Enter number beside the operation to perform: \n1. Add\n2. Subtract\n3. Multiply\n4. Divide");
+/*Switch cases to select the output*/            
             num=s.nextInt();
                 switch(num) {
                     case 1:
