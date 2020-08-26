@@ -3,9 +3,10 @@ package com.stackroute;
 import java.util.Scanner;
 
 public class Main {
-
+/*Main class to sort number using if-else*/
         public static void main(String[] args) {
 	    int a,b,c,d;
+/*Break the 4 digits to min1, min2,max1,max2,low,high,mid1,mid2 for comparison and sorting*/
 	    int min1, min2, max1, max2,low, high, mid1, mid2;
         Scanner s = new Scanner(System.in);
         System.out.println("Enter 1st number:");
@@ -16,19 +17,17 @@ public class Main {
         c = s.nextInt();
         System.out.println("Enter 4th number:");
         d = s.nextInt();
-        if(a<b)
-        {
+/*Compare values and arrange positions*/
+        if(a<b){
             min1 = a;
             max1 = b;
         }
-        else
-        {
+        else{
             min1 = b;
             max1 = a;
         }
 
-        if (c<d)
-        {
+        if (c<d){
             min2 = c;
             max2 = d;
         }
@@ -37,8 +36,7 @@ public class Main {
             max2 = c;
         }
 
-        if(min1<min2)
-        {
+        if(min1<min2){
             low = min1;
             mid1 = min2;
         }
@@ -47,8 +45,7 @@ public class Main {
             mid1=min1;
         }
 
-        if(max1>max2)
-        {
+        if(max1>max2){
             high = max1;
             mid2 = max2;
         }
@@ -60,8 +57,7 @@ public class Main {
         if(mid1<mid2){
             System.out.println(low+","+mid1+","+mid2+","+high);
         }
-        else
-        {
+        else{
             System.out.println(low+","+mid2+","+mid1+","+high);
         }
     }
