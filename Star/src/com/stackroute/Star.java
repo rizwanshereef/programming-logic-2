@@ -1,21 +1,20 @@
 package com.stackroute;
 
-public class Main {
+public class Star {
 
 /* Main class to print sequence of * */
     public static void main(String args[]){
-        Main m = new Main();
-        int n = 5;
+        int len = 5;
 /*Invoke method stars*/
-        Stars(n);
+        Stars(len);
     }
 
 /*Method to print * sequence */
-    public static void Stars(int n){
+    public static void Stars(int len){
         int i, j;
-/*Print * using 3 loops based on number of each value of n*/
-        for(i=0; i<n; i++){
-            for(j=2*(n-i); j>=0; j--){
+/*Print * using 3 loops based on number of each value of len*/
+        for(i=0; i<len; i++){
+            for(j=2*(len-i); j>=0; j--){
                 System.out.print(" ");
             }
 

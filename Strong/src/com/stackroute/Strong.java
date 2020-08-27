@@ -2,29 +2,29 @@ package com.stackroute;
 
 import java.util.*;
 
-public class Main{
+public class Strong {
 /*Main Class to find if the number is Strong*/
 	public static void main(String[] args) {
-		int n,i;
+		int num,itr;
 		int fact,rem;
-		Scanner sc = new Scanner(System.in);
+		Scanner scan = new Scanner(System.in);
 /*Input the number*/
 		System.out.print("\nEnter the number : ");
-		n = sc.nextInt();
+		num = scan.nextInt();
 		int sum = 0;
-		int temp = n;
+		int temp = num;
 /*Check whether the number is strong*/
-		while(n != 0){
-			i = 1;
+		while(num != 0){
+			itr = 1;
 			fact = 1;
-			rem = n % 10;
+			rem = num % 10;
 
-			while(i <= rem){
-				fact = fact * i;
-				i++;
+			while(itr <= rem){
+				fact = fact * itr;
+				itr++;
 			}
 			sum = sum + fact;
-			n = n / 10;
+			num = num / 10;
 		}
 
 		if(sum == temp)

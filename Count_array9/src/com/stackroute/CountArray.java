@@ -3,21 +3,20 @@ package com.stackroute;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Main {
+public class CountArray {
 /*main class to check the count of 9s in the array*/
     public static void main(String[] args) {
-        Scanner s = new Scanner(System.in);
+        Scanner scan = new Scanner(System.in);
         System.out.println("Enter the no of elements");
-        int n = s.nextInt();
+        int len = scan.nextInt();
     /*Array insert*/
-        int num[] = new int[n];
-        for (int i = 0; i < n; i++) {
+        int num[] = new int[len];
+        for (int i = 0; i < len; i++) {
             System.out.println("Enter the " + (i + 1) + "Number:");
-            num[i] = s.nextInt();
+            num[i] = scan.nextInt();
         }
 /*passing the array to method arrayCount*/
         arrayCount(num);
-
 
     }
 
@@ -25,9 +24,9 @@ public class Main {
     public static void arrayCount(int[] num){
 /*Initialize count variable*/
         int count = 0;
-        int n = num.length;
-/*Checking each value of array for 9 then increament counter*/
-        for(int i =0; i<n;i++){
+        int len = num.length;
+/*Checking each value of array for 9 then increment counter*/
+        for(int i =0; i<len;i++){
             if(num[i]==9)
             {
                 count++;

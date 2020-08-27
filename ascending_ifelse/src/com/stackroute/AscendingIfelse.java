@@ -2,38 +2,38 @@ package com.stackroute;
 
 import java.util.Scanner;
 
-public class Main {
+public class AscendingIfelse {
 /*Main class to sort number using if-else*/
         public static void main(String[] args) {
-	    int a,b,c,d;
+	    int numOne,numTwo,numThree,numFour;
 /*Break the 4 digits to min1, min2,max1,max2,low,high,mid1,mid2 for comparison and sorting*/
 	    int min1, min2, max1, max2,low, high, mid1, mid2;
-        Scanner s = new Scanner(System.in);
+        Scanner scan = new Scanner(System.in);
         System.out.println("Enter 1st number:");
-        a = s.nextInt();
+        numOne = scan.nextInt();
         System.out.println("Enter 2nd number:");
-        b = s.nextInt();
+        numTwo = scan.nextInt();
         System.out.println("Enter 3rd number:");
-        c = s.nextInt();
+        numThree = scan.nextInt();
         System.out.println("Enter 4th number:");
-        d = s.nextInt();
+        numFour = scan.nextInt();
 /*Compare values and arrange positions*/
-        if(a<b){
-            min1 = a;
-            max1 = b;
+        if(numOne<numTwo){
+            min1 = numOne;
+            max1 = numTwo;
         }
         else{
-            min1 = b;
-            max1 = a;
+            min1 = numTwo;
+            max1 = numOne;
         }
 
-        if (c<d){
-            min2 = c;
-            max2 = d;
+        if (numThree<numFour){
+            min2 = numThree;
+            max2 = numFour;
         }
         else {
-            min2 = d;
-            max2 = c;
+            min2 = numFour;
+            max2 = numThree;
         }
 
         if(min1<min2){
